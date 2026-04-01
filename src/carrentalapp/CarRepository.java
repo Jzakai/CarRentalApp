@@ -31,6 +31,10 @@ public class CarRepository {
         cars.add(new Car("Truck","Standard",5,55,22,"Good","Ford","F150"));
 
         cars.add(new Car("Van/Minivan","Van",7,70,18,"Medium","Chrysler","Pacifica"));
+        
+        cars.add(new Car("Sedan","Intermediate",4,50,19,"Medium","Dodge","Charger"));
+        
+        cars.add(new Car("Crossover","Standard",5,55,30,"Good","Kia","Soul"));
     }
 
     public ArrayList<Car> getCars() {

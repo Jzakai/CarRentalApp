@@ -4,10 +4,7 @@
  */
 package carrentalapp;
 import java.util.Scanner;
-/**
- *
- * @author janaz
- */
+
 public class CarRentalApp {
 
 
@@ -37,8 +34,13 @@ public class CarRentalApp {
         Car bestCar = selector.findBestCar(repo.getCars(), passengers, days, mileage);
 
         if(bestCar != null){
-            System.out.println("\nBest Car:");
-            System.out.println(bestCar.getCarInfo());
+         
+      System.out.println("----------------------------------------------");
+       System.out.println("\nBest Car: " + bestCar.getCarInfo());
+       System.out.println("Max Passengers: " + bestCar.getMaxPassengers());
+
+       double totalCost = bestCar.calculateTripCost(days, mileage);
+            System.out.printf("Total Cost: $%.2f\n", totalCost);
         }
         else{
             System.out.println("No suitable car found.");
@@ -47,3 +49,5 @@ public class CarRentalApp {
         scanner.close();
     }
 }
+
+

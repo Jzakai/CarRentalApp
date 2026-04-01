@@ -4,10 +4,7 @@
  */
 package carrentalapp;
 
-/**
- *
- * @author janaz
- */
+
 
 public class Car {
 
@@ -56,4 +53,7 @@ public class Car {
     public String getCarInfo() {
         return make + " " + model + " (" + category + ")";
     }
+    public int getMaxPassengers() {
+    return maxPassengers;
+}
 }
